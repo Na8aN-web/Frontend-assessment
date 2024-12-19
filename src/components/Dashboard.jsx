@@ -60,7 +60,7 @@ const Dashboard = () => {
                     <Navbar />
 
                     <div className="bg-white relative p-4 mb-6 border-[2px] rounded-[20px] border-purple-800 shadow-2xl">
-                        <div className="flex items-center justify-between">
+                        <div className="flex md:flex-row flex-col items-center justify-between">
                             <div className="flex items-center space-x-3">
                                 <div className="w-8 h-8 rounded-full">
                                     <Image src={Microsoft} alt='micro' />
@@ -125,12 +125,12 @@ const Dashboard = () => {
                         </div>
 
                         {/* Lead Cards */}
-                        <div className="mt-6 flex w-full">
-                            <div className="flex flex-col w-2/3">
+                        <div className="mt-6 flex md:flex-row flex-col w-full">
+                            <div className="flex flex-col w-full md:w-2/3">
                                 <p className="text-sm text-gray-600 my-2">
                                     Copilot has pinpointed 20 key leads that show strong purchase intent and are actively engaging. These leads need your focus.
                                 </p>
-                                <div className="flex gap-4 items-start">
+                                <div className="flex md:flex-row flex-col gap-4 items-start">
                                     <div className="flex-1 cursor-pointer shadow-md  rounded-lg p-4" onClick={() => setIsModal1Open(true)}>
                                         <div className="flex items-center space-x-3 mb-3">
                                             <div className="w-10 h-10 bg-gray-200 rounded-full"></div>
@@ -166,7 +166,7 @@ const Dashboard = () => {
                                     </div>
 
 
-                                    <div className="w-8 h-8 bg-white border relative right-8 top-20 rounded-full flex justify-center items-center cursor-pointer">
+                                    <div className="w-8 h-8 hidden md:flex bg-white border relative right-8 top-20 rounded-full justify-center items-center cursor-pointer">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="none"
@@ -192,7 +192,7 @@ const Dashboard = () => {
                                 </div>
                             </div>
 
-                            <div className="p-2 w-1/3">
+                            <div className="p-2 w-full md:w-1/3">
                                 <h2 className="text-lg font-medium text-gray-800 mb-4">Other key activities</h2>
 
                                 {/* Activity Card 1 */}

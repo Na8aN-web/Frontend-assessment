@@ -12,7 +12,7 @@ import {
 
 const Navbar = () => {
     return (
-        <div className="flex items-center justify-between mb-4 bg-white shadow-md p-2">
+        <div className="flex items-center w-full justify-between mb-4 bg-white shadow-md p-2">
             <div className="flex items-center space-x-4">
                 <button className="text-gray-600  px-3 py-1 flex items-center text-[10px]">
                     <span className="text-gray-700 text-[10px]">My open leads</span>
